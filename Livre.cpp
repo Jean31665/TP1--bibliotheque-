@@ -2,30 +2,42 @@
 #include "Livre.h"
 
 Livre::Livre(std::string titre, std::string auteur, std::string editeur) :
-_titre(titre), _auteur(auteur), _editeur(editeur) {
+_titre(titre), _auteur(auteur), _editeur(editeur), _statutlivre(statutlivre) {
 };
 
 /*
-bool statutlivre() {
+ statutlivre() {
 if (statutlivre = emprunté)
-	return bool false
-};
+	return  false
+	else
+	return  true
 
-/*
-std::string Livre::gettitre(std::string titre) {
-	return {titre};
-};
-
-std::string Livre::getauteur(std::string auteur) {
-	return {auteur};
-};
-std::string Livre::getediteur(std::string editeur) {
-	return {editeur};
-};
-
-std::string Livre::getFullPresentation(std::string titre, std::string auteur, std::string editeur) {
-	return titre + " " + auteur + " " + editeur;
 };
 */
+
+
+
+std::string Livre::getstatut() {
+	return _statut;
+};
+
+
+
+std::string Livre::gettitre() {
+	return _titre;
+};
+
+std::string Livre::getauteur() {
+	return _auteur;
+};
+
+std::string Livre::getediteur() {
+	return _editeur;
+};
+
+std::string Livre::getFullPresentation() {
+	return _titre + " " + _auteur + " " + _editeur;
+};
+
 
 
